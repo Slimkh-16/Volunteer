@@ -491,20 +491,20 @@ b, strong {
   clear: both; }
 
 .desktop ::-webkit-scrollbar {
-  width: 7px; }
+  width: 5px; }
 
 .desktop ::-webkit-scrollbar:horizontal {
-  height: 7px; }
+  height: 5px; }
 
 .desktop ::-webkit-scrollbar-thumb {
-  width: 7px;
+  width: 5px;
   border-color: #fff;
-  background-color: #009fe2; }
+  background-color: #343434; }
 
 .desktop ::-webkit-scrollbar-thumb:hover {
   border-width: 1px 1px 1px 2px;
-  border-color: #009fe2;
-  background-color: #828283; }
+  border-color: #343434;
+  background-color: #343434; }
 
 .desktop ::-webkit-scrollbar-track {
   border-width: 0; }
@@ -1204,6 +1204,7 @@ i.bold-italic {
   position: absolute;
   overflow: hidden; }
   .mission-sld img {
+    width: auto;
     height: 100%;
     max-width: none; }
   .mission-sld.mission-sld--small {
@@ -1743,8 +1744,8 @@ i.bold-italic {
   z-index: 5; }
 
 .lg-outer .lg-video .lg-object {
-  width: auto !important;
   height: auto !important;
+  max-height: none;
   margin: 0 auto; }
 
 .banner-found {
@@ -2290,6 +2291,9 @@ i.bold-italic {
   .soldier-all-page .pagination-section {
     padding-top: 20px;
     padding-bottom: 20px; }
+
+.soldier-all-page .hero:before {
+  display: none; }
 
 .soldier-filter {
   padding: 20px 0 45px; }
