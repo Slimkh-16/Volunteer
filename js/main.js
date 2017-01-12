@@ -700,8 +700,15 @@ $(document).ready(function() {
   $('ul.tabs').tabs();
   $('select').not('.my_select_box').material_select();
   $('.collapsible').collapsible();
+  var paddRight = window.innerWidth - document.documentElement.clientWidth;
   $('.modal').modal({
-      opacity: 1
+      opacity: 1,
+      // ready: function(modal, trigger) { 
+      //   document.querySelector('.header').style.paddingRight =  paddRight + 'px';
+      // },
+      // complete: function() { 
+      //   document.querySelector('.header').style.paddingRight = 0;
+      // } // Callback for Modal close
   });
 });
 // validate form

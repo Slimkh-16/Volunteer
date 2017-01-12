@@ -43,6 +43,8 @@
         <li><a href="#">Мероприятия</a></li>
         <li><a href="#">Бойцы</a></li>
         <li><a href="#">Отчет перед родиной</a></li>
+        <li><a href="#">Организации    </a></li>
+        <li><a href="#">Лицензия</a></li>
         <li><a href="#">Вопрос/ответ</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
@@ -74,7 +76,7 @@
         </div>
         <div class="header-bottom">
           <div class="container"><a href="main.html" class="logo"><img src="images/logo01.svg" alt="" class="logo-img"><img src="images/logo02.svg" alt="" class="logo-visible-fix"></a>
-            <div class="header-bottom__button"><a href="#!" class="btn waves-effect waves-light"><span class="icon-ico03"></span>Запрос о помощи</a><a href="#want-help" class="btn btn--blue waves-effect waves-light modal-trigger"><span class="icon-ico04"></span>Хочу помочь</a></div>
+            <div class="header-bottom__button"><a href="#help" class="btn waves-effect waves-light"><span class="icon-ico03"></span>Запрос о помощи</a><a href="#want-help" class="btn btn--blue waves-effect waves-light modal-trigger"><span class="icon-ico04"></span>Хочу помочь</a></div>
           </div>
         </div>
       </header>
@@ -92,10 +94,18 @@
                 <div class="soldier-slider">
                   <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div data-index-slider="1" class="swiper-slide"><img src="assets/images/slider.jpg" alt=""></div>
-                      <div data-index-slider="2" class="swiper-slide"><img src="assets/images/slider2.jpg" alt=""></div>
-                      <div data-index-slider="3" class="swiper-slide"><img src="assets/images/slider.jpg" alt=""></div>
-                      <div data-index-slider="4" class="swiper-slide"><img src="assets/images/slider2.jpg" alt=""></div>
+                      <div data-index-slider="1" class="swiper-slide">
+                        <div class="bottom-gradient"></div><img src="assets/images/slider.jpg" alt="">
+                      </div>
+                      <div data-index-slider="2" class="swiper-slide">
+                        <div class="bottom-gradient"></div><img src="assets/images/slider2.jpg" alt="">
+                      </div>
+                      <div data-index-slider="3" class="swiper-slide">
+                        <div class="bottom-gradient"></div><img src="assets/images/slider.jpg" alt="">
+                      </div>
+                      <div data-index-slider="4" class="swiper-slide">
+                        <div class="bottom-gradient"></div><img src="assets/images/slider2.jpg" alt="">
+                      </div>
                     </div>
                     <div class="swiper-button-next"><span class="icon-ico33"></span></div>
                     <div class="swiper-button-prev"><span class="icon-ico34"></span></div>
@@ -125,7 +135,7 @@
                         <td>0099 1232 1231 1231 (фонд)</td>
                       </tr>
                     </table>
-                  </div><a href="#" data-text="Помочь бойцу" class="btn btn--blue btn--blue-eff waves-effect waves-light">Помочь бойцу</a>
+                  </div><a href="#want-help" data-text="Помочь бойцу" class="modal-trigger btn btn--blue btn--blue-eff waves-effect waves-light">Помочь бойцу</a>
                 </div>
                 <div class="soldier-tab">
                   <ul class="tabs">
@@ -215,6 +225,44 @@
           <div class="modal-head">Спасибо, Ваша заявка отправлена!</div>
           <div class="modal-body">
             <p>Наш менеджер свяжется с Вами в течение 15 минут.</p><span class="waves-effect waves-light btn modal-close">Закрыть</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="help" class="modal">
+      <div class="modal-content"><span class="modal-action modal-close modal-close--top"><span class="icon-ico28"></span></span>
+        <div class="container"> 
+          <div class="modal-head">Запрос о помощи</div>
+          <div class="modal-body">  
+            <p> Чтобы запросить о помощи, заполните форму</p>
+            <div class="contact-form">
+              <div class="row">
+                <form action="#" class="js_validate">
+                  <div class="col l6 m12 s12 form-field required-field"><span>ФИО*</span>
+                    <input type="text" required>
+                  </div>
+                  <div class="col l6 m12 s12 form-field required-field"><span>Email*</span>
+                    <input type="email" required data-validate="email">
+                  </div>
+                  <div class="col m12 s12 form-field required-field"><span>Телефон*</span>
+                    <input type="tel" required data-validate="phone">
+                  </div>
+                  <div class="col s12 form-field required-field"><span>Сообщение*</span>
+                    <textarea name="contact[message]" required="" class="materialize-textarea"></textarea>
+                  </div>
+                  <div class="col s12 file-field input-field">
+                    <div class="btn btn--blue"><span>Файл</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input type="text" class="file-path">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <button type="submit" data-text="Отправить" class="btn btn--blue btn--blue-eff waves-effect waves-light">Отправить</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
